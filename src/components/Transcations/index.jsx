@@ -17,8 +17,6 @@ function Transcation() {
                 credentials: "include",
             });
     
-            const data = await response.json();
-    
             if (response.ok) {
                 // ✅ Ensure the deleted item is removed correctly from nested structure
                 setExpenses(prevExpenses => 
