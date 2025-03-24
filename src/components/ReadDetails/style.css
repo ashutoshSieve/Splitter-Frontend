@@ -1,0 +1,89 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.details-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Loading and Error Messages */
+.loading,
+.error {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* Expense Details */
+.expense-details {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.expense-details p {
+    font-size: 18px;
+    color: #495057;
+    margin: 10px 0;
+    padding: 8px;
+    background: #e9ecef;
+    border-radius: 6px;
+}
+
+/* Record Details */
+.record {
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.record p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details-container {
+        max-width: 90%;
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .expense-details p,
+    .record p {
+        font-size: 16px;
+    }
+}

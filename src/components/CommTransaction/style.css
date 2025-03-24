@@ -1,0 +1,92 @@
+/* Community History Page Styling */
+.history-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.history-content {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expense-table th,
+.expense-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-table th {
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+.expense-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.expense-table tr:hover {
+    background-color: #ecf0f1;
+    transition: background 0.3s ease;
+}
+
+/* Loading and Error Messages */
+.loading,
+.no-data,
+.error {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.loading {
+    color: #555;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.no-data {
+    color: #7f8c8d;
+}
+
+.date-row {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    text-align: center;
+}
