@@ -98,10 +98,10 @@ function Community() {
                             <p>Share this community link:</p>
                             <input
                                 type="text"
-                                value={`http://localhost:3000/community/${community.name}`}
+                                value={`https://splitter-friend.netlify.app/community/${community.name}`}
                                 readOnly
                             />
-                            <button onClick={() => navigator.clipboard.writeText(`http://localhost:3000/community/${community.name}`)}>
+                            <button onClick={() => navigator.clipboard.writeText(`https://splitter-friend.netlify.app/community/${community.name}`)}>
                                 Copy Link
                             </button>
                         </div>
