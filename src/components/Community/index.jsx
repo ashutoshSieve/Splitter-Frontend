@@ -10,7 +10,6 @@ function Community() {
     const [community, setCommunity] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [expenses, setExpenses] = useState([]);
     const [description, setDescription] = useState("");
     const [amount, setAmount] = useState("");
     const [selectedMembers, setSelectedMembers] = useState([]);
@@ -32,7 +31,6 @@ function Community() {
                 }
 
                 setCommunity(data);
-                setExpenses(data.expenses || []);
             } catch (err) {
                 console.error("Error fetching community:", err);
                 setError(err.message);
