@@ -18,7 +18,7 @@ function Community() {
     useEffect(() => {
         const fetchCommunity = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/community/${name}`, {
+                const response = await fetch(`https://splitter-backend-p26d.onrender.com/community/${name}`, {
                     method: "GET",
                     credentials: "include",
                 });
@@ -51,7 +51,7 @@ function Community() {
             if (selectedMembers.length === 0) {
                 return alert("Select at least one member");
             }
-            const response = await fetch(`http://localhost:5000/commAddExpense/${name}`, {
+            const response = await fetch(`https://splitter-backend-p26d.onrender.com/commAddExpense/${name}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -91,10 +91,10 @@ function Community() {
                             <p>Share this community link:</p>
                             <input
                                 type="text"
-                                value={`http://localhost:3000/community/${community.name}`}
+                                value={`https://splitter-friend.netlify.app/community/${community.name}`}
                                 readOnly
                             />
-                            <button onClick={() => navigator.clipboard.writeText(`http://localhost:3000/community/${community.name}`)}>
+                            <button onClick={() => navigator.clipboard.writeText(`https://splitter-friend.netlify.app/community/${community.name}`)}>
                                 Copy Link
                             </button>
                         </div>
