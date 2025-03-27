@@ -120,7 +120,7 @@ function Community() {
                                                 />
                                                 <span className="member-name">{member.name}</span>
 
-                                                {/* Filtering amounts where respected_userID matches logged-in user */}
+                                                
                                                 <span className="member-balance">
                                                     {member.amounts
                                                         ?.filter(amt => amt.respected_userID === community.loginUser)
@@ -149,7 +149,7 @@ function Community() {
                             Transaction History
                         </a>
 
-                        {/* Split Expense Form */}
+                        
                         <div className="splitter">
                             <h2>Split an Expense</h2>
                             <input
