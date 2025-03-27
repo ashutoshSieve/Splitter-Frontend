@@ -28,7 +28,7 @@
     margin-bottom: 20px;
 }
 
-/* Messages (Loading, No Data, Error) */
+
 .loading, .error, .no-data {
     font-size: 18px;
     color: #555;
