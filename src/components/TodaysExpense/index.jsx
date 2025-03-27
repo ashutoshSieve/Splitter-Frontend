@@ -4,7 +4,7 @@ import "./style.css";
 
 
 function TodayExpense() {
-    const { name } = useParams(); // Get community name from URL
+    const { name } = useParams(); 
     const [expenses, setExpenses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -38,7 +38,7 @@ function TodayExpense() {
             const response = await fetch(`https://splitter-backend-p26d.onrender.com/commDelete/${name}`, {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ id }), // Send correct record ID
+                body: JSON.stringify({ id }), 
                 credentials: "include",
             });
     
