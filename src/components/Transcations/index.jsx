@@ -7,7 +7,7 @@ function Transcation() {
     const [expenses, setExpenses] = useState([]);
     const [userName, setUserName] = useState("");
 
-    // ✅ Delete Item when Checkbox is clicked
+    
     const handleDeleteExpense = async (itemId) => {
         try {
             const response = await fetch("https://splitter-backend-p26d.onrender.com/deleteItem", {
@@ -18,14 +18,13 @@ function Transcation() {
             });
     
             if (response.ok) {
-                // ✅ Ensure the deleted item is removed correctly from nested structure
                 setExpenses(prevExpenses => 
                     prevExpenses
                         .map(expense => ({
                             ...expense,
-                            items: expense.items.filter(item => item._id !== itemId) // Remove item
+                            items: expense.items.filter(item => item._id !== itemId) 
                         }))
-                        .filter(expense => expense.items.length > 0) // Remove empty dates
+                        .filter(expense => expense.items.length > 0) 
                 );
             }
         } catch (error) {
