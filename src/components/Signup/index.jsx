@@ -15,7 +15,7 @@ function Signup() {
       setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
+  
   const handleSubmit = async (e) => {
       e.preventDefault();
 
@@ -47,7 +47,7 @@ function Signup() {
   useEffect(() => {
       fetch("https://splitter-backend-p26d.onrender.com/verify-token", {
           method: "GET",
-          credentials: "include" // Include cookies in the request
+          credentials: "include" 
       })
       .then(res => res.json())
       .then(data => {
