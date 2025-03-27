@@ -1,4 +1,4 @@
-/* Ensure full page layout */
+/* full page layout */
 body, html {
   height: 100%;
   margin: 0;
@@ -7,9 +7,9 @@ body, html {
   flex-direction: column;
 }
 
-/* Home container takes up full available space */
+/* Home container  */
 .home-container {
-  flex: 1; /* Makes it take up remaining space */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,13 @@ body, html {
   text-align: center;
 }
 
-/* Footer is fixed at bottom but does not overlap content */
+
 .footer {
   color: white;
   text-align: center;
   padding: 15px 0;
   width: 100%;
-  position: relative; /* Change from fixed to relative */
+  position: relative; 
   bottom: 0;
   left: 0;
 }
