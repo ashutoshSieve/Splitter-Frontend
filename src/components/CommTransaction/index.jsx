@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 
 function CommunityHistory() {
-    const { name } = useParams(); // Get community name from URL
+    const { name } = useParams(); 
     const [expenses, setExpenses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -40,7 +40,7 @@ function CommunityHistory() {
             const response = await fetch(`https://splitter-backend-p26d.onrender.com/commDelete/${name}`, {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ id }), // Send correct record ID
+                body: JSON.stringify({ id }), 
                 credentials: "include",
             });
     
@@ -83,7 +83,7 @@ function CommunityHistory() {
                                 </thead>
                                 <tbody>
                                 {expenses.reduce((acc, expense) => {
-                                    // If date is already processed, don't add a new date row
+                                    
                                     if (!acc.dates.has(expense.date)) {
                                         acc.dates.add(expense.date);
                                         acc.elements.push(
@@ -93,12 +93,12 @@ function CommunityHistory() {
                                         );
                                     }
 
-                                    // Add all records for this date
+                                    
                                     expense.records.forEach((record) => {
-                                        acc.globalIndex++; // Increase the index globally across all records
+                                        acc.globalIndex++; 
                                         acc.elements.push(
                                             <tr key={`${expense.date}-${record.userId}`}>
-                                                <td>{acc.globalIndex}</td>  {/* Use global index */}
+                                                <td>{acc.globalIndex}</td>  
                                                 <td>{record.desc}</td>
                                                 <td>{record.amount}</td>
                                                 <td>
