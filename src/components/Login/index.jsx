@@ -14,7 +14,7 @@ function Login() {
       setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
+  
   const handleSubmit = async (e) => {
       e.preventDefault();
 
@@ -31,8 +31,8 @@ function Login() {
           const data = await response.json();
           setMessage(data.message);
 
-          if (response.ok) { // Instead of response.status === 201
-              window.location.href = "/main"; // Redirect to main page
+          if (response.ok) { 
+              window.location.href = "/main"; 
           }
       } catch (error) {
           setMessage("Something went wrong. Please try again.");
@@ -46,7 +46,7 @@ function Login() {
   useEffect(() => {
       fetch("https://splitter-backend-p26d.onrender.com/verify-token", {
           method: "GET",
-          credentials: "include" // Include cookies in the request
+          credentials: "include" 
       })
       .then(res => res.json())
       .then(data => {
