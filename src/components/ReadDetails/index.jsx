@@ -21,8 +21,8 @@ function ExpenseDetails() {
                 const data = await response.json();
                 if (!response.ok) throw new Error(data.message || "Failed to fetch");
                 
-                // Ensure we store the correct data
-                setExpense(data); // No need to access `data.expense`
+                
+                setExpense(data); 
             } catch (err) {
                 setError(err.message);
             } finally {
