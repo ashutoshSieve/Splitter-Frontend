@@ -23,7 +23,7 @@ function Main() {
       .then((res) => res.json())
       .then((data) => {
         if (data.redirect) {
-            window.location.href = data.redirect; // Redirect to home page
+            window.location.href = data.redirect; 
         }
         if (data.name) {
           setUser(data);
@@ -56,7 +56,7 @@ function Main() {
 
         </div>
 
-        {/* Main Content */}
+        
         <div className="main-content">
           <h3>{user ? `Welcome, ${user.name}` : "Loading..."}</h3>
           <p>{user ? user.date : "Loading..."}</p>
@@ -67,7 +67,7 @@ function Main() {
 
       <Footer />
 
-      {/* Popup Form */}
+      
         {showForm && (
           <div className="popup-overlay">
             <div className="popup">
