@@ -32,7 +32,7 @@ function Items() {
 
             if (response.ok) {
                 const newExpense = await response.json();
-                setExpenses([...expenses, newExpense]); // Assuming API returns the new expense with an `_id`
+                setExpenses([...expenses, newExpense]); 
                 setFormData({ details: "", amount: "" });
             }
         } catch (error) {
@@ -40,7 +40,7 @@ function Items() {
         }
     };
 
-    // ✅ Delete Item when Checkbox is clicked
+    
     const handleDeleteExpense = async (id) => {
         if (!window.confirm("Are you sure you want to delete this expense?")) return;
         try {
@@ -52,7 +52,7 @@ function Items() {
             });
     
             const data = await response.json();
-            console.log("Server Response:", data); // Debugging Log
+            console.log("Server Response:", data); 
     
             if (response.ok) {
                 setExpenses(expenses.filter((expense) => expense._id !== id));
