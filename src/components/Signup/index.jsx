@@ -10,9 +10,14 @@ function Signup() {
       password: ""
   });
   const [message, setMessage] = useState(""); 
+  const [showPassword, setShowPassword] = useState(false);
   
   const handleChange = (e) => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   
@@ -77,13 +82,18 @@ function Signup() {
                   onChange={handleChange} 
                   required
           />
-          <input type="password" 
-                name="password" 
-                placeholder="Password" 
-                value={formData.password} 
-                onChange={handleChange} 
-                required
-           />
+          <div className="password-container">
+                <input type={showPassword ? "text" : "password"} 
+                    name="password" 
+                    placeholder="Password" 
+                    value={formData.password} 
+                    onChange={handleChange} 
+                    required
+                />
+                <span className="toggle-password" onClick={togglePasswordVisibility}>
+                {showPassword ? "🙈" : "👁️"}
+                </span>
+          </div>
           <button type="submit" className="signup-button">Sign Up</button>
         </form>
         <p className="signup-text">Or sign up with</p>
