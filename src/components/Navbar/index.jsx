@@ -16,7 +16,7 @@ function Navbar() {
       if (response.ok) {
         localStorage.removeItem("token"); 
         sessionStorage.clear();
-        navigate("/login"); 
+        navigate("/"); 
       } else {
         console.error("Logout failed");
       }
