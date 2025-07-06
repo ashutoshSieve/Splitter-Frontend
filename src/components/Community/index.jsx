@@ -94,8 +94,14 @@ function Community() {
                                 value={`https://splitter-friend.netlify.app/community/${community.name}`}
                                 readOnly
                             />
-                            <button onClick={() => navigator.clipboard.writeText(`https://splitter-friend.netlify.app/community/${community.name}`)}>
-                                Copy Link
+                            <button
+                              onClick={() =>
+                                navigator.clipboard.writeText(
+                                  `https://splitter-friend.netlify.app/community/${encodeURIComponent(community.name)}`
+                                )
+                              }
+                            >
+                              Copy Link
                             </button>
                         </div>
 
