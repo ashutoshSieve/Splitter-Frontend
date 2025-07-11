@@ -12,7 +12,7 @@ function TodayExpense() {
     useEffect(() => {
         const fetchTodayExpenses = async () => {
             try {
-                const response = await fetch(`https://splitter-backend-p26d.onrender.com/todayExpense/${name}`, {
+                const response = await fetch(`https://tight-adorne-pulsekein-43f4bedf.koyeb.app/todayExpense/${name}`, {
                     method: "GET",
                     credentials: "include",
                 });
@@ -35,7 +35,7 @@ function TodayExpense() {
         if (!window.confirm("Are you sure you want to delete this expense?")) return;
 
         try {
-            const response = await fetch(`https://splitter-backend-p26d.onrender.com/commDelete/${name}`, {
+            const response = await fetch(`https://tight-adorne-pulsekein-43f4bedf.koyeb.app/commDelete/${name}`, {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ id }), 
