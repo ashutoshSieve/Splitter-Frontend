@@ -10,7 +10,7 @@ function Transcation() {
     
     const handleDeleteExpense = async (itemId) => {
         try {
-            const response = await fetch("https://splitter-backend-p26d.onrender.com/deleteItem", {
+            const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/deleteItem", {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ id: itemId }),
@@ -33,7 +33,7 @@ function Transcation() {
     };
 
     useEffect(() => {
-        fetch("https://splitter-backend-p26d.onrender.com/userHistory", {
+        fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/userHistory", {
             method: "GET",
             credentials: "include",
         })
