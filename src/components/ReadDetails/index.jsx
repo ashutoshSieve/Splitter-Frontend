@@ -13,7 +13,7 @@ function ExpenseDetails() {
     useEffect(() => {
         const fetchExpenseDetails = async () => {
             try {
-                const response = await fetch(`https://splitter-backend-p26d.onrender.com/readInDetails/${name}/${ID}`, {
+                const response = await fetch(`https://tight-adorne-pulsekein-43f4bedf.koyeb.app/readInDetails/${name}/${ID}`, {
                     method: "GET",
                     credentials: "include",
                 });
