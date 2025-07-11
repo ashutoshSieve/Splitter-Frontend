@@ -91,7 +91,7 @@ function Community() {
                             <p>Share this community link:</p>
                             <input
                                 type="text"
-                                value={`https://splitter-friend.netlify.app/community/${community.name}`}
+                                value={ `https://splitter-friend.netlify.app/community/${encodeURIComponent(community.name)}`}
                                 readOnly
                             />
                             <button
