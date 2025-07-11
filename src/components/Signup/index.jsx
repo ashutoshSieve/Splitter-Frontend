@@ -25,7 +25,7 @@ function Signup() {
       e.preventDefault();
 
       try {
-          const response = await fetch("https://splitter-backend-p26d.onrender.com/signup", {
+          const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/signup", {
               method: "POST",
               credentials: "include",
               headers: {
@@ -46,7 +46,7 @@ function Signup() {
   };
 
   const handleGoogleLogin = () => {
-      window.location.href = "https://splitter-backend-p26d.onrender.com/google";
+      window.location.href = "https://tight-adorne-pulsekein-43f4bedf.koyeb.app/google";
   };
   
   useEffect(() => {
