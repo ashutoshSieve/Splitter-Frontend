@@ -18,7 +18,7 @@ function Community() {
     useEffect(() => {
         const fetchCommunity = async () => {
             try {
-                const response = await fetch(`https://splitter-backend-p26d.onrender.com/community/${name}`, {
+                const response = await fetch(`https://tight-adorne-pulsekein-43f4bedf.koyeb.app/community/${name}`, {
                     method: "GET",
                     credentials: "include",
                 });
@@ -51,7 +51,7 @@ function Community() {
             if (selectedMembers.length === 0) {
                 return alert("Select at least one member");
             }
-            const response = await fetch(`https://splitter-backend-p26d.onrender.com/commAddExpense/${name}`, {
+            const response = await fetch(`https://tight-adorne-pulsekein-43f4bedf.koyeb.app/commAddExpense/${name}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
