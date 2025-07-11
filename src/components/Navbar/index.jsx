@@ -8,7 +8,7 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("https://splitter-backend-p26d.onrender.com/logout", {
+      const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/logout", {
         method: "POST",
         credentials: "include",
       });
