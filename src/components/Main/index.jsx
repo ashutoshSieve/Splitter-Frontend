@@ -16,7 +16,7 @@ function Main() {
   };
 
   useEffect(() => {
-    fetch("https://splitter-backend-p26d.onrender.com/user", {
+    fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/user", {
       method: "GET",
       credentials: "include",
     })
