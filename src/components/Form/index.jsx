@@ -12,7 +12,7 @@ function Form({ onCommunityCreated }) {
   const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-          const response = await fetch("https://splitter-backend-p26d.onrender.com/createCommunity", {
+          const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/createCommunity", {
               method: "POST",
               headers: {
                   "Content-Type": "application/json"
