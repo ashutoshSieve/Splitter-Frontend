@@ -6,7 +6,7 @@ function Items() {
     const [formData, setFormData] = useState({ details: "", amount: "" });
     const [expenses, setExpenses] = useState([]);
     useEffect(() => {
-        fetch("https://splitter-backend-p26d.onrender.com/getExpenses", {
+        fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/getExpenses", {
             method: "GET",
             credentials: "include",
         })
@@ -23,7 +23,7 @@ function Items() {
         e.preventDefault();
 
         try {
-            const response = await fetch("https://splitter-backend-p26d.onrender.com/addItems", {
+            const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/addItems", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -44,7 +44,7 @@ function Items() {
     const handleDeleteExpense = async (id) => {
         if (!window.confirm("Are you sure you want to delete this expense?")) return;
         try {
-            const response = await fetch("https://splitter-backend-p26d.onrender.com/deleteItem", {
+            const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/deleteItem", {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ id }),
