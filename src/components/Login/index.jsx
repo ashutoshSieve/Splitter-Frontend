@@ -23,7 +23,7 @@ function Login() {
       e.preventDefault();
 
       try {
-          const response = await fetch("https://splitter-backend-p26d.onrender.com/login", {
+          const response = await fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/login", {
               method: "POST",
               credentials: "include",
               headers: {
@@ -44,11 +44,11 @@ function Login() {
   };
 
   const handleGoogleLogin = () => {
-      window.location.href = "https://splitter-backend-p26d.onrender.com/google";
+      window.location.href = "https://tight-adorne-pulsekein-43f4bedf.koyeb.app/google";
   };
   
   useEffect(() => {
-      fetch("https://splitter-backend-p26d.onrender.com/verify-token", {
+      fetch("https://tight-adorne-pulsekein-43f4bedf.koyeb.app/verify-token", {
           method: "GET",
           credentials: "include" 
       })
