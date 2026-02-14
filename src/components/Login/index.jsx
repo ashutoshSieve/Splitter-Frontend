@@ -89,7 +89,7 @@ function Login() {
         </form>
         <p className="signup-text">Or Login with</p>
         <button className="google-button" onClick={handleGoogleLogin}>
-          <img src="image/search.png" alt="Google" className="google-icon" />
+          <img src="assets/search.png" alt="Google" className="google-icon" />
           Login with Google
         </button>
       </div>
@@ -99,3 +99,4 @@ function Login() {
 }
 
 export default Login;
+
