@@ -7,7 +7,7 @@ function Home() {
     <div className="home-container">
       <div className="home-card">
         <img 
-          src="image/img2.png" 
+          src="assets/img2.png" 
           alt="Money Splitting" 
           className="home-image"
         />
@@ -26,3 +26,4 @@ function Home() {
 }
 
 export default Home;
+
