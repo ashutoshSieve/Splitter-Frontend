@@ -98,7 +98,7 @@ function Signup() {
         </form>
         <p className="signup-text">Or sign up with</p>
         <button className="google-button" onClick={handleGoogleLogin}>
-          <img src="image/search.png" alt="Google" className="google-icon" />
+          <img src="assets/search.png" alt="Google" className="google-icon" />
           Sign Up with Google
         </button>
       </div>
@@ -108,3 +108,4 @@ function Signup() {
 }
 
 export default Signup;
+
