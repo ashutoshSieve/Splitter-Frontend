@@ -5,6 +5,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Form from "../Form"; 
 import Items from "../Items";
+const API = process.env.REACT_APP_API_BASE_URL;
 
 function Main() {
   const [user, setUser] = useState(null);
@@ -16,7 +17,7 @@ function Main() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/user", {
+    fetch(`${API}/user`, {
       method: "GET",
       credentials: "include",
     })
@@ -78,3 +79,4 @@ function Main() {
 }
 
 export default Main;
+
