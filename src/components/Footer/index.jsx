@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
         <p className="footer-text">Made with ❤️ by Ashutosh Gupta</p>
         <a 
-          href="https://www.linkedin.com/in/ashutosh-gupta-19838026/" 
+          href="https://www.linkedin.com/in/ashutosh-gupta-198380261/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="linkedin-link"
@@ -18,4 +18,5 @@ function Footer() {
 }
 
 export default Footer;
+
 
